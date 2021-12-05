@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/sli.css">
+	<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.css">
+ 
+<!--  jQuery 1.7+  -->
+<script src="js/jquery-1.11.3.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="js/owl.carousel.js"></script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">BAND</a></li>
+			<li><a href="#">TOUR</a></li>
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="#">MORE</a></li>
+		</ul>
+
+	</nav>
+	<!--Slider start-->
+	<div>
+
+		<div id="owl-demo" class="owl-carousel owl-theme">
+ 
+			  <div class="item"><img src="img/pic2.jpg" alt="The Last of us"></div>
+			  <div class="item"><img src="img/pic4.jpg" alt="GTA V"></div>
+			  <div class="item"><img src="img/pic8.jpg" alt="Mirror Edge"></div>
+			  <div class="item"><img src="img/pic2.jpg" alt="Mirror Edge"></div>
+ 
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      autoPlay: 2000
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+ 
+});
+	</script>
+
+</body>
+</html>
